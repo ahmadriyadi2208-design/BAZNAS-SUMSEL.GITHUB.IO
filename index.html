@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONITORING BAZNAS SE SUMSEL</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        iframe {
-            display: block;
-            width: 100%; /* Mengisi seluruh lebar viewport */
-            height: 100vh;
-            border: none;
-            background: lightyellow;
-        }
-    </style>
 </head>
 <body>
     <iframe src="https://script.google.com/macros/s/AKfycbxiSWBOGrozfqvvcpzq-Cxmw0QGFW8Ycxy4ek4Gu_tlqKn5EPLZvlm9N5DmEiONjOKbPA/exec" allow="camera"></iframe>
+    <script> windows.onload = function() {
+    document.querySelector('iframe').requestFullscreen().catch((err) => {
+    console.error('error attempting to enable full-screen mode: ${err.message}');
+    });
+};
+    </script>
 </body>
 
 </html>
+
