@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONITORING BAZNAS SE SUMSEL</title>
+    <title>Penghubung Google Apps Script</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f7f6; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .card { border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .btn-google { background-color: #4285F4; color: white; transition: 0.3s; }
+        .btn-google:hover { background-color: #357ae8; color: white; transform: translateY(-2px); }
+    </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbxiSWBOGrozfqvvcpzq-Cxmw0QGFW8Ycxy4ek4Gu_tlqKn5EPLZvlm9N5DmEiONjOKbPA/exec" allow="camera"></iframe>
-    <script> windows.onload = function() {
-    document.querySelector('iframe').requestFullscreen().catch((err) => {
-    console.error('error attempting to enable full-screen mode: ${err.message}');
-    });
-};
-    </script>
-</body>
 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card p-4 text-center">
+                <div class="mb-4">
+                </div>
+                <h3 class="fw-bold mb-3">Google Apps Script</h3>
+                <p class="text-muted mb-4">Silakan klik tombol di bawah untuk mengakses aplikasi atau formulir Anda.</p>
+                
+                <a href="https://script.google.com/macros/s/AKfycbxiSWBOGrozfqvvcpzq-Cxmw0QGFW8Ycxy4ek4Gu_tlqKn5EPLZvlm9N5DmEiONjOKbPA/exec" 
+                   class="btn btn-google btn-lg w-100 fw-bold">
+                    Buka Aplikasi
+                </a>
+
+                <p class="mt-4 small text-secondary">
+                    Anda akan dialihkan ke layanan Google secara aman.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
+
 
